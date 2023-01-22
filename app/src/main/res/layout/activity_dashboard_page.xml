@@ -1,0 +1,1243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D62727"
+    android:orientation="vertical"
+    tools:context=".DashboardPage">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnReload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@color/transparent"
+            android:drawableStart="@drawable/replay_icon"
+            android:fontFamily="@font/montserratregular"
+            android:onClick="Reload"
+            android:text="Bersihkan"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@color/transparent"
+            android:drawableStart="@drawable/exit_icon"
+            android:fontFamily="@font/montserratregular"
+            android:onClick="Logout"
+            android:text="Keluar"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnReload"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/tvLaporan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserratbold"
+                android:text="LAPORAN"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratregular"
+                android:text="Pelanggan"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtNamaLengkap"
+                android:layout_width="320dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_red_border"
+                android:fontFamily="@font/montserratregular"
+                android:hint="Nama Lengkap"
+                android:inputType="text"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtNomorTelepon"
+                android:layout_width="320dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_red_border"
+                android:fontFamily="@font/montserratregular"
+                android:hint="Nomor Telepon"
+                android:inputType="numberDecimal"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rgTipeMotor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbMatic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:fontFamily="@font/montserratregular"
+                        android:text="Matic"
+                        android:textColor="@color/colorPrimary" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/matic" />
+
+                    <RadioButton
+                        android:id="@+id/rbSport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:fontFamily="@font/montserratregular"
+                        android:text="Sport"
+                        android:textColor="@color/colorPrimary" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/sport" />
+
+                    <RadioButton
+                        android:id="@+id/rbCUB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:fontFamily="@font/montserratregular"
+                        android:text="CUB"
+                        android:textColor="@color/colorPrimary" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/cub" />
+
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/edtNomorPlat"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_toEndOf="@id/rgTipeMotor"
+                    android:background="@drawable/edit_text_red_border"
+                    android:fontFamily="@font/montserratregular"
+                    android:hint="Nomor Plat"
+                    android:inputType="text"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtKilometer"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/edtNomorPlat"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/rgTipeMotor"
+                    android:background="@drawable/edit_text_red_border"
+                    android:fontFamily="@font/montserratregular"
+                    android:hint="Kilometer"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtTahunPerakitan"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/edtKilometer"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/rgTipeMotor"
+                    android:background="@drawable/edit_text_red_border"
+                    android:fontFamily="@font/montserratregular"
+                    android:hint="Tahun Perakitan"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtNomorMesin"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/edtTahunPerakitan"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/rgTipeMotor"
+                    android:background="@drawable/edit_text_red_border"
+                    android:fontFamily="@font/montserratregular"
+                    android:hint="Nomor Mesin"
+                    android:inputType="text"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserratregular"
+                android:text="Mekanik"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtNamaMekanik"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_red_border"
+                android:fontFamily="@font/montserratregular"
+                android:hint="Nama Mekanik"
+                android:inputType="text"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spinnerNamaBengkel"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_red_border"
+                android:drawableEnd="@drawable/drop_down_icon"
+                android:entries="@array/Spinner_Nama_Bengkel" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserratregular"
+                android:text="Item Pemeriksaan"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:id="@+id/llSparepart"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imgBan"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_toStartOf="@+id/imgBateraiAki"
+                    android:src="@drawable/ban" />
+
+                <ImageView
+                    android:id="@+id/imgCheckBan"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignEnd="@id/imgBan"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangBan"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignEnd="@id/imgBan"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgBateraiAki"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/battery_aki" />
+
+                <ImageView
+                    android:id="@+id/imgCheckBateraiAki"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignEnd="@id/imgBateraiAki"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangBateraiAki"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignEnd="@id/imgBateraiAki"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgBearingRodaBelakang"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/imgBateraiAki"
+                    android:src="@drawable/bearing_roda_belakang" />
+
+                <ImageView
+                    android:id="@+id/imgCheckBearingRodaBelakang"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignEnd="@id/imgBearingRodaBelakang"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangBearingRodaBelakang"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignEnd="@id/imgBearingRodaBelakang"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgBearingRodaDepan"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@+id/imgBan"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_toStartOf="@+id/imgBusi"
+                    android:src="@drawable/bearing_roda_depan" />
+
+                <ImageView
+                    android:id="@+id/imgCheckBearingRodaDepan"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgBan"
+                    android:layout_alignEnd="@id/imgBearingRodaDepan"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangBearingRodaDepan"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgBan"
+                    android:layout_alignEnd="@id/imgBearingRodaDepan"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgBusi"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@id/imgBan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/busi" />
+
+                <ImageView
+                    android:id="@+id/imgCheckBusi"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgBan"
+                    android:layout_alignEnd="@id/imgBusi"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangBusi"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgBan"
+                    android:layout_alignEnd="@id/imgBusi"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgComSteer"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@id/imgBan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/imgBusi"
+                    android:src="@drawable/com_steer" />
+
+                <ImageView
+                    android:id="@+id/imgCheckComSteer"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgBan"
+                    android:layout_alignEnd="@id/imgComSteer"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangComSteer"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgBan"
+                    android:layout_alignEnd="@id/imgComSteer"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgEngineSound"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@+id/imgComSteer"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_toStartOf="@+id/imgBusi"
+                    android:src="@drawable/engine_sound" />
+
+                <ImageView
+                    android:id="@+id/imgCheckEngineSound"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgBearingRodaDepan"
+                    android:layout_alignEnd="@id/imgEngineSound"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangEngineSound"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgBearingRodaDepan"
+                    android:layout_alignEnd="@id/imgEngineSound"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgGasketCylinder"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@id/imgComSteer"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/gasket_cylinder_cover" />
+
+                <ImageView
+                    android:id="@+id/imgCheckGasketCylinder"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgBearingRodaDepan"
+                    android:layout_alignEnd="@id/imgGasketCylinder"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangGasketCylinder"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgBearingRodaDepan"
+                    android:layout_alignEnd="@id/imgGasketCylinder"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgKabelGas"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@id/imgComSteer"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/imgBusi"
+                    android:src="@drawable/kabel_gas" />
+
+                <ImageView
+                    android:id="@+id/imgCheckKabelGas"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgBearingRodaDepan"
+                    android:layout_alignEnd="@id/imgKabelGas"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangKabelGas"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgBearingRodaDepan"
+                    android:layout_alignEnd="@id/imgKabelGas"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgKampasRemBelakang"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@+id/imgKabelGas"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_toStartOf="@+id/imgBusi"
+                    android:src="@drawable/kampas_rem_belakang" />
+
+                <ImageView
+                    android:id="@+id/imgCheckKampasRemBelakang"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgEngineSound"
+                    android:layout_alignEnd="@id/imgKampasRemBelakang"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangKampasRemBelakang"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgEngineSound"
+                    android:layout_alignEnd="@id/imgKampasRemBelakang"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgKampasRemDepan"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@id/imgKabelGas"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/kampas_rem_depan" />
+
+                <ImageView
+                    android:id="@+id/imgCheckKampasRemDepan"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgEngineSound"
+                    android:layout_alignEnd="@id/imgKampasRemDepan"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangKampasRemDepan"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgEngineSound"
+                    android:layout_alignRight="@id/imgKampasRemDepan"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgLampuDepan"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@id/imgKabelGas"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/imgBusi"
+                    android:src="@drawable/lampu_depan" />
+
+                <ImageView
+                    android:id="@+id/imgCheckLampuDepan"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgEngineSound"
+                    android:layout_alignRight="@id/imgLampuDepan"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangLampuDepan"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgEngineSound"
+                    android:layout_alignRight="@id/imgLampuDepan"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgLampuBelakang"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@+id/imgLampuDepan"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toStartOf="@+id/imgBusi"
+                    android:src="@drawable/lampu_belakang" />
+
+                <ImageView
+                    android:id="@+id/imgCheckLampuBelakang"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgKampasRemBelakang"
+                    android:layout_alignRight="@id/imgLampuBelakang"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangLampuBelakang"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgKampasRemBelakang"
+                    android:layout_alignRight="@id/imgLampuBelakang"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgMinyakRem"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@id/imgLampuDepan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/minyak_rem" />
+
+                <ImageView
+                    android:id="@+id/imgCheckMinyakRem"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgKampasRemBelakang"
+                    android:layout_alignRight="@id/imgMinyakRem"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangMinyakRem"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgKampasRemBelakang"
+                    android:layout_alignRight="@id/imgMinyakRem"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgOliMesin"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@id/imgLampuDepan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/imgBusi"
+                    android:src="@drawable/oli_mesin" />
+
+                <ImageView
+                    android:id="@+id/imgCheckOliMesin"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgKampasRemBelakang"
+                    android:layout_alignRight="@id/imgOliMesin"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangOliMesin"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgKampasRemBelakang"
+                    android:layout_alignRight="@id/imgOliMesin"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgOliShockbreaker"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@+id/imgOliMesin"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toStartOf="@+id/imgBusi"
+                    android:src="@drawable/oli_shockbreaker" />
+
+                <ImageView
+                    android:id="@+id/imgCheckOliShockbreaker"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgLampuBelakang"
+                    android:layout_alignRight="@id/imgOliShockbreaker"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangOliShockbreaker"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgLampuBelakang"
+                    android:layout_alignRight="@id/imgOliShockbreaker"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgPadSet"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@id/imgOliMesin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/pad_set" />
+
+                <ImageView
+                    android:id="@+id/imgCheckPadSet"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgLampuBelakang"
+                    android:layout_alignRight="@id/imgPadSet"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangPadSet"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgLampuBelakang"
+                    android:layout_alignRight="@id/imgPadSet"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgPiringanCakram"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@id/imgOliMesin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/imgBusi"
+                    android:src="@drawable/piringan_cakram" />
+
+                <ImageView
+                    android:id="@+id/imgCheckPiringanCakram"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgLampuBelakang"
+                    android:layout_alignRight="@id/imgPiringanCakram"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangPiringanCakram"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgLampuBelakang"
+                    android:layout_alignRight="@id/imgPiringanCakram"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgRadiatorCoolant"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@+id/imgPiringanCakram"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toStartOf="@+id/imgBusi"
+                    android:src="@drawable/radiator_coolant" />
+
+                <ImageView
+                    android:id="@+id/imgCheckRadiatorCoolant"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgOliShockbreaker"
+                    android:layout_alignRight="@id/imgRadiatorCoolant"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangRadiatorCoolant"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgOliShockbreaker"
+                    android:layout_alignRight="@id/imgRadiatorCoolant"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgSaringanUdara"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@id/imgPiringanCakram"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/saringan_udara" />
+
+                <ImageView
+                    android:id="@+id/imgCheckSaringanUdara"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgOliShockbreaker"
+                    android:layout_alignRight="@id/imgSaringanUdara"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangSaringanUdara"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgOliShockbreaker"
+                    android:layout_alignRight="@id/imgSaringanUdara"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgSealFrontFork"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@id/imgPiringanCakram"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/imgBusi"
+                    android:src="@drawable/seal_front_fork" />
+
+                <ImageView
+                    android:id="@+id/imgCheckSealFrontFork"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgOliShockbreaker"
+                    android:layout_alignRight="@id/imgSealFrontFork"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangSealFrontFork"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgOliShockbreaker"
+                    android:layout_alignRight="@id/imgSealFrontFork"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgShockbreaker"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@+id/imgSealFrontFork"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toStartOf="@+id/imgBusi"
+                    android:src="@drawable/shockbreaker" />
+
+                <ImageView
+                    android:id="@+id/imgCheckShockbreaker"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgRadiatorCoolant"
+                    android:layout_alignRight="@id/imgShockbreaker"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangShockbreaker"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgRadiatorCoolant"
+                    android:layout_alignRight="@id/imgShockbreaker"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgDriveBeltSet"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@id/imgSealFrontFork"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/drive_belt_set" />
+
+                <ImageView
+                    android:id="@+id/imgCheckDriveBeltSet"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgRadiatorCoolant"
+                    android:layout_alignRight="@id/imgDriveBeltSet"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangDriveBeltSet"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgRadiatorCoolant"
+                    android:layout_alignRight="@id/imgDriveBeltSet"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgOliTransmisi"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@id/imgSealFrontFork"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/imgBusi"
+                    android:src="@drawable/oli_transmisi" />
+
+                <ImageView
+                    android:id="@+id/imgCheckOliTransmisi"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgRadiatorCoolant"
+                    android:layout_alignRight="@id/imgOliTransmisi"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangOliTransmisi"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgRadiatorCoolant"
+                    android:layout_alignRight="@id/imgOliTransmisi"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgDriveChainKit"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@id/imgSealFrontFork"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/drive_chain_kit"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgCheckDriveChainKit"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgRadiatorCoolant"
+                    android:layout_alignRight="@id/imgDriveChainKit"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangDriveChainKit"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgRadiatorCoolant"
+                    android:layout_alignRight="@id/imgDriveChainKit"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/imgKabelKopling"
+                    android:layout_width="80dp"
+                    android:layout_height="95dp"
+                    android:layout_below="@id/imgSealFrontFork"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/imgBusi"
+                    android:src="@drawable/kabel_kopling"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgCheckKabelKopling"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgRadiatorCoolant"
+                    android:layout_alignRight="@id/imgKabelKopling"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ceklis"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgSilangKabelKopling"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imgRadiatorCoolant"
+                    android:layout_alignRight="@id/imgKabelKopling"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/silang"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserratregular"
+                android:text="Pemeriksaan"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtHasilPemeriksaan"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_red_border"
+                android:fontFamily="@font/montserratregular"
+                android:gravity="top|left"
+                android:hint="Kesimpulan Pemeriksaan"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/edtTanggalPerbaikan"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@id/rgJenisService"
+                    android:background="@drawable/edit_text_red_border"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/montserratregular"
+                    android:hint="Tgl Periksa Berikutnya"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/detailTanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/edtTanggalPerbaikan"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="*Tanggal Pemeriksaan Kembali"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10sp"
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:id="@+id/edtNomorAHASS"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/detailTanggal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@id/rgJenisService"
+                    android:background="@drawable/edit_text_red_border"
+                    android:fontFamily="@font/montserratregular"
+                    android:hint="Nomor tlp. AHASS"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/edtNomorAHASS"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="*Nomor telepon mekanik"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10sp"
+                    android:textStyle="italic" />
+
+                <RadioGroup
+                    android:id="@+id/rgJenisService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true">
+
+                    <RadioButton
+                        android:id="@+id/rbAHASS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:fontFamily="@font/montserratregular"
+                        android:text="AHASS"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbHomeService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:fontFamily="@font/montserratregular"
+                        android:text="Home Service"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+                </RadioGroup>
+
+                <CheckBox
+                    android:id="@+id/checkBooking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rgJenisService"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="11dp"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="Booking"
+                    android:textColor="@color/colorPrimary" />
+
+                <CheckBox
+                    android:id="@+id/checkMotorkuX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/checkBooking"
+                    android:layout_alignParentEnd="true"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="MotorkuX"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnCetak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_red"
+                android:fontFamily="@font/montserratbold"
+                android:onClick="Cetak"
+                android:text="CETAK"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+

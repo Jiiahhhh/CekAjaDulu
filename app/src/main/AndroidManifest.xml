@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ilal.freepass23">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logocad"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logocad"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Freepass23">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DashboardPage">
+
+        </activity>
+        <activity android:name=".sparepart.KabelKopling" />
+        <activity android:name=".sparepart.DriveChainKit" />
+        <activity android:name=".sparepart.OliTransmisi" />
+        <activity android:name=".sparepart.DriveBeltSet" />
+        <activity android:name=".sparepart.Shockbreaker" />
+        <activity android:name=".sparepart.SealFrontFork" />
+        <activity android:name=".sparepart.SaringanUdara" />
+        <activity android:name=".sparepart.RadiatorCoolant" />
+        <activity android:name=".sparepart.PiringanCakram" />
+        <activity android:name=".sparepart.PadSet" />
+        <activity android:name=".sparepart.OliShockbreaker" />
+        <activity android:name=".sparepart.OliMesin" />
+        <activity android:name=".sparepart.MinyakRem" />
+        <activity android:name=".sparepart.LampuBelakang" />
+        <activity android:name=".sparepart.LampuDepan" />
+        <activity android:name=".sparepart.KampasRemDepan" />
+        <activity android:name=".sparepart.KampasRemBelakang" />
+        <activity android:name=".sparepart.KabelGas" />
+        <activity android:name=".sparepart.GasketCylinder" />
+        <activity android:name=".sparepart.EngineSound" />
+        <activity android:name=".sparepart.ComSteer" />
+        <activity android:name=".sparepart.Busi" />
+        <activity android:name=".sparepart.BearingRodaDepan" />
+        <activity android:name=".sparepart.BearingRodaBelakang" />
+        <activity android:name=".sparepart.BateraiAki" />
+        <activity android:name=".sparepart.Ban" />
+        <activity android:name=".PdfViewPage" />
+        <activity android:name=".PdfShare"/>
+
+    </application>
+
+</manifest>

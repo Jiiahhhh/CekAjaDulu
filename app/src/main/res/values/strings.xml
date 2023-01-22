@@ -1,0 +1,384 @@
+<resources>
+    <string name="app_name">Cek Aja Dulu!</string>
+    <string name="bersihkan">Bersihkan</string>
+    <string name="keluar">Keluar</string>
+    <string name="nama">Nama</string>
+    <string name="nomor_telepon">Nomor Telepon</string>
+
+    <string-array name="Spinner_Nama_Bengkel">
+        <item> 7 - Astra Motor Alauddin </item>
+        <item> 430 - Cipta Jaya </item>
+        <item> 450 - Fajar Motor Rappang </item>
+        <item> 455 - Bintang Terang </item>
+        <item> 862 - Super Motor Bone </item>
+        <item> 891 - Supra Honda </item>
+        <item> 901 - Harto Motor </item>
+        <item> 1056 - PT Koko Jaya Prima </item>
+        <item> 1150 - Fajar Tani, Ud </item>
+        <item> 1363 - Makesa Prima Bau-bau </item>
+        <item> 1445 - Usaha Jaya Motor </item>
+        <item> 1448 - Makmur Motor, Ud </item>
+        <item> 1557 - Duta Motor </item>
+        <item> 1558 - Ks Motor </item>
+        <item> 1559 - Surya Motor </item>
+        <item> 1760 - Kurnia Motor </item>
+        <item> 1761 - Hartaco Motor </item>
+        <item> 1762 - Kencana Motor </item>
+        <item> 1841 - Putra Bone </item>
+        <item> 1854 - Bintang Jaya Motor Sengkang </item>
+        <item> 1951 - Bm Motor </item>
+        <item> 1990 - Hamzah Motor </item>
+        <item> 2121 - Remaja Motor </item>
+        <item> 2164 - Hs Motor </item>
+        <item> 2233 - Wahyu Motor </item>
+        <item> 2287 - Pattarowanta </item>
+        <item> 2539 - CV Aneka Motor - Ambon </item>
+        <item> 2555 - Hana Motor </item>
+        <item> 2645 - Sinar Motor, Toko </item>
+        <item> 2667 - PT Nusantara Surya Sakti Makassar </item>
+        <item> 4811 - PT Nusantara Surya Sakti Pare </item>
+        <item> 4838 - PT Nusantara Surya Sakti - Mamuju </item>
+        <item> 4839 - PT Nusantara Surya Sakti Kolaka </item>
+        <item> 4843 - PT Nusantara Surya Sakti Bone </item>
+        <item> 5550 - Astra Motor Sentral </item>
+        <item> 5555 - Astra Motor Kendari </item>
+        <item> 6090 - PT Wira Jaya Prima Motor </item>
+        <item> 6375 - CV Jaya  Bantaeng </item>
+        <item> 6376 - CV Jaya Makassar </item>
+        <item> 6377 - PT Duta Abadi Jaya  </item>
+        <item> 6378 - PT Wiratama Multi Prima </item>
+        <item> 6897 - Iefa Motor Malino </item>
+        <item> 7153 - Aneka Indah Ladongi </item>
+        <item> 7154 - Surya Motor </item>
+        <item> 7287 - Aris Motor </item>
+        <item> 7463 - Jayawijaya Motor </item>
+        <item> 7511 - Prima Motor </item>
+        <item> 7530 - Mesran Utama, Toko </item>
+        <item> 7633 - Sarana Motor </item>
+        <item> 7643 - Service Remaja Motor </item>
+        <item> 7669 - Mitra Aneka Motor </item>
+        <item> 7672 - Randi Motor </item>
+        <item> 7909 - PT Nusantara Surya Sakti - Tual </item>
+        <item> 7910 - PT Nusantara Surya Sakti Unaaha </item>
+        <item> 7916 - Fajar Motor Sidrap </item>
+        <item> 8120 - Dwipa Jaya Motor </item>
+        <item> 8138 - Mesakada Motor </item>
+        <item> 8258 - Sinar Motor Sakti </item>
+        <item> 8259 - Eka Jaya Motor </item>
+        <item> 8565 - PT Tunas Dwipa Matra Pinrang </item>
+        <item> 8566 - PT Tunas Dwipa Matra Kendari </item>
+        <item> 8567 - PT Tunas Dwipa Matra - Palopo </item>
+        <item> 8568 - PT Tunas Dwipa Matra Pare </item>
+        <item> 8696 - Anugerah Motor </item>
+        <item> 8759 - Motor 88 </item>
+        <item> 8762 - Sinar Motor </item>
+        <item> 8765 - Rahma Motor </item>
+        <item> 8877 - PT Daya Anugrah Mandiri Palopo </item>
+        <item> 8906 - Iefa Motor Mawang </item>
+        <item> 9008 - PT Daya Anugrah Mandiri Kendari </item>
+        <item> 9009 - PT Daya Anugrah Mandiri Pinrang </item>
+        <item> 9110 - Wakuru Motor </item>
+        <item> 9140 - Irmah Motor, Cv </item>
+        <item> 9218 - PT Daya Anugrah Mandiri Pare </item>
+        <item> 9595 - PT Ambon Sakti Motor </item>
+        <item> 9705 - CV Salahutu Motor </item>
+        <item> 9816 - Astra Motor Konsel </item>
+        <item> 9817 - Astra Motor Maros </item>
+        <item> 9818 - Astra Motor Takalar </item>
+        <item> 9819 - Astra Motor Bulukumba </item>
+        <item> 9820 - Astra Motor Kolaka </item>
+        <item> 9823 - Astra Motor Unaaha </item>
+        <item> 9835 - PT Makassar Inti Motor </item>
+        <item> 10028 - Bombana Putri Motor </item>
+        <item> 10641 - PT Nusantara Surya Sakti Palopo </item>
+        <item> 10644 - Astra Motor Gowa </item>
+        <item> 10645 - Sukma Motor </item>
+        <item> 11004 - CV Gowata Sakti Motor </item>
+        <item> 11006 - PT Maluku Graha Motor </item>
+        <item> 11848 - PT Nusantara Surya Sakti Kendari </item>
+        <item> 12353 - Astra Motor Ambon </item>
+        <item> 12354 - Astra Motor Bone </item>
+        <item> 12355 - Astra Motor Mamuju </item>
+        <item> 12740 - Astra Motor Palopo </item>
+        <item> 12752 - Astra Motor Polmas </item>
+        <item> 12753 - Astra Motor Sinjai </item>
+        <item> 12807 - Astra Motor Daya </item>
+        <item> 13097 - PT Tunas Dwipa Matra Pangkep </item>
+        <item> 13148 - PT Bintang Kharisma Jaya Makassar </item>
+        <item> 13721 - PT Armada Tunasjaya Abadi Polman </item>
+        <item> 13722 - PT Armada Tunasjaya Abadi Makassar </item>
+        <item> 13723 - PT Armada Tunasjaya Abadi Malili </item>
+        <item> 13731 - CV Mitra Angkasa Jaya Utama </item>
+        <item> 13865 - PT Bintang Kharisma Jaya Belopa </item>
+        <item> 14029 - PT Tunas Dwipa Matra Sengkang </item>
+        <item> 14063 - Teguh Karya </item>
+        <item> 14064 - PT Daya Anugrah Mandiri Pangkep </item>
+        <item> 15008 - PT Daya Anugrah Mandiri Gowa </item>
+        <item> 15015 - PT. Daya Anugrah Mandiri Borong </item>
+        <item> 15016 - Inti Motor </item>
+        <item> 15031 - Mesran Utama 2, Toko </item>
+        <item> 15047 - UD. HM Motor </item>
+        <item> 15143 - Astra Motor Sidrap </item>
+        <item> 15205 - Remaja Motor 2 </item>
+        <item> 15223 - PT Wira Jaya Prima Motor 2 </item>
+        <item> 15224 - PT Tunas Dwipa Matra - Tomoni </item>
+        <item> 15225 - CV Ayam Jantan </item>
+        <item> 15909 - PT Cendrawasih Jaya Sakti </item>
+        <item> 15931 - Astra Motor Bulukumba 2 </item>
+        <item> 15932 - Astra Motor Maros 2 </item>
+        <item> 16282 - Astra Motor Pinrang </item>
+        <item> 16952 - PT Nusantara Surya Sakti - Pasangkayu </item>
+        <item> 17556 - Astra Motor Muna </item>
+
+    </string-array>
+    <string-array name="detail_alamat">
+        <item> Jln.Sultan Alauddin no 57, Tamalate, Makassar, Sulawesi Selatan </item>
+        <item> JL. Buru 50, Wajo, Makassar, Sulawesi Selatan </item>
+        <item> Jl. ST. Hasanuddin 96, Panca Rijang, Parepare, Sulawesi Selatan </item>
+        <item> Jl. Pahlawan 58, Bissappu, Bantaeng, Sulawesi Selatan </item>
+        <item> Jl. Veteran 18 C, Tanete Riattang, Bone, Sulawesi Selatan </item>
+        <item> Jl. A. Djemma no. 94D, Rappocini, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Incoiro No. 44 RT. 04, Nuha, Palopo, Sulawesi Selatan </item>
+        <item> Jl. Toddopuli  raya  95, Panakkukang, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Jend. Sudirman No. 54, Wonomulyo, Majene, Sulawesi Barat </item>
+        <item> Jl. Bataraguru No. 68, Betoambari, Buton, Sulawesi Utara </item>
+        <item> Jl.Kemakmuran No.33, Lalabata, Wajo, Sulawesi Selatan </item>
+        <item> Jl.kemakmuran no 11b, Enrekang, Pinrang, Sulawesi Selatan </item>
+        <item> Jl. Kemakmuran, Pangkajene, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Cakalang No.12 Ujung Tanah, Makassar, Sulawesi Selatan </item>
+        <item> Jl. A. Mappanyukki 412, Mariso, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Bau Massepe 134 to 136, Parepare, Sulawesi Selatan </item>
+        <item> Jl. Daeng Tata No.29, Tamalate, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Veteran Selatan no.525, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Muh Hatta DPN PLN Masamba, Palopo, Sulawesi Selatan </item>
+        <item> Jl. Lapabbe No. 8, Tempe, Wajo, Sulawesi Selatan </item>
+        <item> Jl. Pahlawan 155, Lili Rilau, Wajo, Sulawesi Selatan </item>
+        <item> Jl. Tamalanrea Raya blok A no.8, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Perintis Kemerdekaan No. 206, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Jend. Gatot Subroto (Simpang 3),  Majene, Sulawesi Barat </item>
+        <item> Jl. Jend. Sudirman No.27, Turikale, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Poros Makassar Maros No.50, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Tulukabessy No. 36, Kota Ambon, Maluku, Maluku </item>
+        <item> Jl. Sultan Hasanuddin 56, Barru, Parepare, Sulawesi Selatan </item>
+        <item> Jl. Bhayangkara, Sinjai utara, Bone, Sulawesi Selatan </item>
+        <item> Jl. G Bawakaraeng no.130, Makassar, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Bau Massepe No.299, Ujung, Parepare, Sulawesi Selatan </item>
+        <item> Jl KS Tubun No.36, Mamuju, Majene, Sulawesi Barat </item>
+        <item> Jl. Pramuka No. 44, Kolaka, Kolaka, Sulawesi Utara </item>
+        <item> Jl. Ahmad Yani, Tanete Riattang, Bone, Sulawesi Selatan </item>
+        <item> Jl Cokroaminoto No.9 BCD, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Jend. Ahmad Yani No 34 C-D, Kendari, Sulawesi Utara </item>
+        <item> Jl. Tentara Pelajar No.67, Makassar, Sulawesi Selatan </item>
+        <item> JL Dr. Ratulangi No 11 A, Bantaeng, Bantaeng, Sulawesi Selatan </item>
+        <item> Jl. Sungai Limboto No. 91, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Rappocini Raya No.120, Makassar, Sulawesi Selatan </item>
+        <item> Jl Pengayoman No.23 C, Makassar, Sulawesi Selatan </item>
+        <item> JL. A. Mappatangka No.38 Malino, Gowa, Sulawesi Selatan </item>
+        <item> Jl. Woltermonginsidi No 58, Kolaka, Sulawesi Utara </item>
+        <item> Jl. Poros Topoyo, Topoyo, Majene, Sulawesi Barat </item>
+        <item> Jl. Kemakmuran Harue, Bantaeng, Sulawesi Selatan </item>
+        <item> Jl. Pahlawan, Binamu, Bantaeng, Sulawesi Selatan </item>
+        <item> Jl. Christina Martha Tiahahu, P.Seram, Maluku, Maluku </item>
+        <item> Jl. Mt Haryono, Kambu, Kendari, Sulawesi Utara </item>
+        <item> Jl. Poros Makale-Rantepao, Palopo, Sulawesi Selatan </item>
+        <item> Jl. Poros lasehao, Kawabo, Muna, Sulawesi Utara </item>
+        <item> Jl. Betoambari No.79, Buton, Sulawesi Utara </item>
+        <item> Jl. Yos Sudarso, GU, Buton, Sulawesi Utara </item>
+        <item> Jl. Jendral Sudirman, Kota Tual, Maluku, Maluku </item>
+        <item> Jl. Jendral Sudirman No.137, Konawe, Sulawesi Utara </item>
+        <item> Jl. Poros Rappang, Parepare, Sulawesi Selatan </item>
+        <item> Jl. Poros Mangkutana Soroako, Palopo, Sulawesi Selatan </item>
+        <item> Jl. Emmy Saelan 20,  Mamasa, Majene, Sulawesi Barat </item>
+        <item> Jl. Jenderal Soedirman Langgur,  Maluku Tenggara, Maluku </item>
+        <item> Jl. Andi Jaja No. 220, Pitumpanua, Wajo, Sulawesi Selatan </item>
+        <item> Jl. Jend. Sudirman No. 158, Pinrang, Sulawesi Selatan </item>
+        <item> Jl. A. Yani No.185, Wua-wua, Kendari, Sulawesi Utara </item>
+        <item> Jln Dr Ratulangi No 128, Wara Utara, Palopo, Sulawesi Selatan </item>
+        <item> Jl. Bau Massepe No.46, Parepare, Sulawesi Selatan </item>
+        <item> Jl. Abd Muthalib Dg Narang No.67, Gowa, Sulawesi Selatan </item>
+        <item> Jl. Jend. A Yani 70 B, Rantepao, Palopo, Sulawesi Selatan </item>
+        <item> Jl. Kerung Kerung No.P. 10, Malunda, Majene, Sulawesi Barat </item>
+        <item> Desa Andowia, Kec. Asera, Andowia, Konawe, Sulawesi Utara </item>
+        <item> Jl. Jend. Sudirman No. 153, Palopo, Sulawesi Selatan </item>
+        <item> Jl. Poros Malino Mawang, Somba Opu, Gowa, Sulawesi Selatan </item>
+        <item> Jl. Sultan Hasanuddin No. 126, Kendari, Sulawesi Utara </item>
+        <item> Jl. Jend. Ahmad Yani No.109, Pinrang, Sulawesi Selatan </item>
+        <item> Desa Matano Oe, Tongkuno, Muna, Sulawesi Utara </item>
+        <item> Jl. Ujung Bori Lama No. 29, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Lahalede No.12,  Ujung, Parepare, Sulawesi Selatan </item>
+        <item> Jl. Dr. Sitanala RT 003, Kota Ambon, Maluku </item>
+        <item> Jl. Sungai Saddang Baru No.99 A, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Hj. Umar No. 235,  Laeya, Konsel, Sulawesi Utara </item>
+        <item> Jl. Poros Maros-Makassar Km.3, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Diponegoro No 142,  Pattalasang, Gowa, Sulawesi Selatan </item>
+        <item> Jl. Sam Ratulangi Caile, Ujung Bulu, Bantaeng, Sulawesi Selatan </item>
+        <item> Jl. Pramuka No. 88, Kolaka, Sulawesi Utara </item>
+        <item> Jl. Sapati No. 15,  Unaaha, Konawe, Sulawesi Utara </item>
+        <item> Jl. A.P. Pettarani No.6, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Yos Sudarso, Rumbia, Bombana, Sulawesi Utara </item>
+        <item> JL. Andi Djemmah No. 75 A-C, Palopo, Sulawesi Selatan </item>
+        <item> Jl. Sultan Hasanuddin No. 136, Gowa, Sulawesi Selatan </item>
+        <item> Jl. Mora Karossa KM 6, Karossa, Majene, Sulawesi Barat </item>
+        <item> Jl. Poros Panciro-Limbung, Bajeng, Gowa, Sulawesi Selatan </item>
+        <item> Jl. Wolter Monginsidi No. 24 Lateri, Kota Ambon, Maluku </item>
+        <item> Jl. MT. Haryono No. 105,  Kambu, Kendari, Sulawesi Utara </item>
+        <item> Jln Ir M Putuhena,  Wayame, Ambon, Maluku </item>
+        <item> Jl. Ahmad Yani Depan BRI Unit Palakka </item>
+        <item> Jl. Jendral Sudirman Karema, Mamuju, Majene, Sulawesi Barat </item>
+        <item> Jln Sultan Hasanuddin No 11, Masamba, Palopo, Sulawesi Selatan </item>
+        <item> Jl. Jend. Sudirman No. 134,  Wonomulyo, Majene, Sulawesi Barat </item>
+        <item> Jl. Petta Ponggawae,  Sinjai utara, Bone, Sulawesi Selatan </item>
+        <item> Jl Perintis Kemerdekaan Km 13, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Kemakmuran,  Pangkajene, Makassar, Sulawesi Selatan </item>
+        <item> Poros Perum BTP Blok E No 12B, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Mr.Muh Yamin,  Polewali, Majene, Sulawesi Barat </item>
+        <item> Manggala, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Dr. Samratulangi No. 38, Malili, Palopo, Sulawesi Selatan </item>
+        <item> JL. Poros Malino,  Somba Opu, Gowa, Sulawesi Selatan </item>
+        <item> Jl. Topoka,  Belopa, Palopo, Sulawesi Selatan </item>
+        <item> Jl. Jend. Sudirman No.25 Tempe, Wajo, Sulawesi Selatan </item>
+        <item> Jl. Abu Bakar Lambogo No 87, Makassar, Sulawesi Selatan </item>
+        <item> Jl Sultan Hasanuddin, Pangkajene, Makassar, Sulawesi Selatan </item>
+        <item> Jl.Poros Palangga No.22 Pallangga, Gowa, Sulawesi Selatan </item>
+        <item> JL. Borong Raya No. 88,  Manggala, Makassar, Sulawesi Selatan </item>
+        <item> JL. Kartini Kel. Latambaga, Kolaka, Sulawesi Utara </item>
+        <item> Jl. Bunggasi,  Poasia, Kendari, Sulawesi Utara </item>
+        <item> JL. Lumba-lumba,  Batalaiworu, Muna, Sulawesi Utara </item>
+        <item> JL. Jend. Sudirman </item>
+        <item> JL. Goa Ria No. 7A,  Biringkanaya, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Tun Abd. Razak,  Somba opu, Gowa, Sulawesi Selatan </item>
+        <item> JL. Trans Sulawesi, Tomoni, Luwu Timur, Sulawesi Selatan </item>
+        <item> Biringkanaya, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Cendrawasih No.333,  Mamajang, Makassar, Sulawesi Selatan </item>
+        <item> Ujung Loe, Bantaeng, Sulawesi Selatan </item>
+        <item> Jl. Sultan Hasanuddin, Pangkajene, Makassar, Sulawesi Selatan </item>
+        <item> Jl. Sultan Hasanuddin No 6 D,E,F, Pinrang, Sulawesi Selatan </item>
+        <item> Jl Ir. Soekarno, Pasangkayu, Majene, Sulawesi Barat </item>
+        <item> Jl. Gatot Sobroto, Sipang 4 Lampogu, Muna, Sulawesi Utara </item>
+    </string-array>
+    <string-array name="Link_gsheet">
+        <item>https://script.google.com/macros/s/AKfycbw9Kg1SnqdoD3AzNYAB1EkYfVivC6pwn_TRb-IWUmcNheqQsDc/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbyolrcL6He7qyHdwJborrl5FPOU4m-FPCtzPA3vK3UPjalVblSd/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbz1Ywmj6YRZOk5UBv6J4IwXqgttqGUpBaMmoR5FKQ8TzMYb5b4/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzfcOpg_ghfm3yRgEMh3T2T7x0LhwQlWtVAa8VxuEUGX_CsBTW5/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbx2MQOzuFumYggOfxm_FZd_T7tJAYt23I2_sSszukBe81qSYJQ/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbyegWl6blyN1-iX_0PkECPzinjyC80GzEug10BInLY_Nge3wPT7/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbx3qQYhN7IqmFBDEVjma_3eGLW8jSj4KxHumbsC/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxhjXeZp98NWTamOv8uR2bW9zdkJ1_UYnhjYttIZ6RXZ9W2mY8I/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwFH7qXSblQGF2MOLpIBWvvVSV8yYmgm08wVdwO53mfqs2lZCw/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwpQk8gdkw92RpzHHqKpn0B_izD4VPvlQH1sNcarJXGSkBblSc/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxoeGJsQS3_4hyeSurta7mqp7VzFdq18ZBRBmomu7FFUdjOZf8/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbz9rxtzD0roV9BcPyx2sezEz2OfUF7IwIuip1H0jEGD-91Jq2o/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbyVdczICnxaGOH665yZKgVgufpqe7-bnc9zaB1l/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbw4YTtgodO-6VSQeDZ27Btm-zJYTkR52jwfU3hNcg/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxanFnTYuZ4jLBGV2nyajPSbZoiQNBCUxuByAhgog/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzmzOkebVBsP7aj_Ba1dBRMT4_PiWniN3fycqy7WA/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxH92baoEH55ACEeQ9wqHiv2yS_0atKcIx7PgDD/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwKTGXIVX794gRkNX9QJV9d5YZlNNkXylW5RKS92w/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzpOJcZkKyfPiqh7dtCxyciNX69MzIkPefGreeX/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzX1MM-n1JuhgpssSDM139bbcyPtv602Je4jGqk/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbykpEjxLeXsSBlpcMToI5yJA-utwIrVBtGh_V_A/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwv_ejdqdc1E8mnOEwjTYgDTyqnhmbyftXly9Yw/exec</item>
+        <item>https://script.google.com/macros/s/AKfycby_70t8WnvyugVJqiaKv_eutuxuJH80VsCPktBj5w/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbx3TWEO2pBeaX4Gj94h0bE2yvIGaX9F7SRL1vCObQ/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzhwrje67922jNfjyLuO51U7N8uFWZRIMlJa1ZEGg/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwyIIx8CZefkS246Fi2JPlRpFCjpQ-8jycgCOW7TQ/exec</item>
+        <item>https://script.google.com/macros/s/AKfycby5KlNiemMhYlRh0wh_qvLE7o-pHxQHN6qb_0KSeg/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwf_uBfOPXDFvwKgUTVwXi9dwUcnWhZ7laLqlYi/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxFt0awgR8k2iqVIR0v5HP9dpuQycStoj6nGXHk/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbz002NKWsCIV-re0UqsjHek7FjqyJDnhECdOWMV/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzlxGJd8uZD_bIeC2_YweCcCLqtZT9qn3N-BlHz/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwokXOjeWib9IZsO3EZfQbODa-A3CSf1KtnMGxNag/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbz7TZsvcmvgc1zWhN-a5tSgU0UH0YCX_5hcYpVj/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbyTrwaLU2TPm9midgUBiHHq6fMxgJuA9oHnQCGI7w/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxkWhEPp1s3ML8AZtGB-Y2CUHzMmTQUaD1JH-lfXw/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbycN2y9ymWnGfY318R_5o3S9Y21B8TaTAnZAWZU/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxZdH4akO-gTfBEpfp-oTxau5mF19hz82qutCwz/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbyiF4oT21KMhpmIcwCwCLCh6B0n7y907H_Rpa0_/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwxgloOXwqNLEv5H6sGa03_g_YCNXYtHJSv2Gku/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwS-sTkW4_gTai4Bb3fEDXfYyIv5IanzKit0XUc/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzi3H-NLjXu8HpoO1oJ9n-yJI8s06RVNZTAJG3f/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbw_ctsOoABbnYxa5aDPBG9lVTxSFf_IxnMK9Cfx/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbz5Ei_LiKwCbPIHj1g1dJ0InN2bvfr2BQlbsAWh/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbyW-VBHpdgTjP6R5DV1mhecAvQmltKFGUm4WVy5/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxkWo99_BZ-I0Zisd9De-8-di-6AfR0_sgtw-1peA/exec</item>
+        <item>https://script.google.com/macros/s/AKfycby4_0VaKFaVrEf5UglClnrb5RAmQveJXPUmx0MR/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwdJi1qG_t_Uey67mPZgUI9NRN_7zYDFsR9M9TB/exec</item>
+        <item>https://script.google.com/macros/s/AKfycby7P_duE_tWE0DTWMtD9UB5hhvd3bC8Pem_puItyQ/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbymXtK9mh9L2CGxtPshkCemfMdVJQyCyag16soD/exec</item>
+        <item>https://script.google.com/macros/s/AKfycby7hEQ3ObWEjFQEy34-kqoNTOKuye2Fl19JppZ7/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbznVB7TUkLGdIf3pL5YqF5_-nRNq8ZJoACE-0oPgA/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxjSbYpeehQ0lDSzqzqBrXq7w09zqNyVWlk4oJ8Gw/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzLwhfMQr2BqCCdLYdiPDOzuoI8QjgdKQrWVGyAwA/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbywwGCAiaaYaBSN8y5WugHPg54DIv6x7u3ZXnRfbQ/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwiU1gUDyfpYp6ZMcTezyHL9_E851X0tcFm-uY2dQ/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbw-w9rbbRr4ZvZyKdub9jEjZpAv_aDbkJrb-KSW/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbx7F5VO7BoEuIVVo5xZP0gObgiPxTTbLNM8UZMp/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzACiZzIgv7hbuVSJkCdJWsIUqwRInp-vrLcL1I/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbw7vrSv6eQLkMXO37GUnqk6b2aLwQZjEicgGZZlsA/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbySKTGxgyyrY9-tPJe8jm7I9Td5p-Wr0Cz-RdmmBT1XR1jfQ2ce/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbx-r08luNOc0LodplW3I6V6GJ4r5q_IXaqVqnZB/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwCPS2v7sPkLCNyXUEG7-5GoxAQTLV9au-qZxxvfA/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbySfWRhcmVfhAJv_zOZIEeFRR7FEdBO2as1Vc3MiQ/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzviBWA72lswNjeWRlJ_eZdDiB96eGIqZYp02zV/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzKGt9XJJuesK8sA_iI5FsyLcy3g2Rb5lpk8cHW/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbw6n5fnleLRSoDA_szjO9Ogpnp8OW_8NYwtQT8i/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbx5A-GG_jo3Oz0NrXg7hmxY8hUjZvgS5NFq9ASQ/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbz3gVqezByKfXWFRSVAZmShXHjKI-8VtcPoV4DXFw/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxWCtLe1bqajtyAJ-0MxWlVTHTPaGm-5_ducGcN/exec</item>
+        <item>https://script.google.com/macros/s/AKfycby3IpODGNWp5wUgh6sOR-BLCtrAzuZ7sUXeN7Ou/exec</item>
+        <item>https://script.google.com/macros/s/AKfycby2RAa9bHWEa_-K47f7c3hGcFSLahHVEf8iPdHQxg/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxGDQjWjAm-3U34f6widCyhwBzuxtiyqmYlxSfsBQ/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbztrQvSHg9baGhbwrE20EKcZKMbmhYPWml-PDln/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzk-q7l8ynRuQQu3VUj49_c-PpIYe1tbbl6fEWh/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxKl-j6hyN9JH-SwplU7aTsEDN6Jyw_OEUKp9Bg/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbysuG4aFc63pWE1ySfFR1HKvTNafdKRlwTWtfak/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxxTTQ0_eWIcT0LJ1uzdvf94hgttX1TBIPSLmMt/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbz4vLhfPWu1VHWUJ6C8yGTY2N5fu_k126PT2Y3g/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbyEKliWMEfLjlP_9t6FA83fgv56HOggSguqp1BYBg/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbz2X24PaDjlMPhn0wXn6r7piITBABHt3f3vLK_tdw/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxbSauWBg6K8Q58vOdABewVm81b_o3bV9atY-HyuQ/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwqPBMCt_RPk_bJU7-duxQ0Km7T6-vYpZRCvLl5/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwZ5WYVOZlTUj75WwB0gYKYRa4_3OlcOS2d1jfl/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbyrSBtVgogzgl0_m2rgZoMM7hwvZO1x7KYrvlGUbA/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxdRrI9o89MC7tvNbDw9r-r4Wnihic3fqzBOliC/exec</item>
+        <item>https://script.google.com/macros/s/AKfycby-Xh5t5TRBGGKZaBsLOB4SX-lJHojRQGKaYgeIGw/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwMks0zbHLzjtIoIzX1nL1DlEOMNZ9pcVzwa0d-/exec</item>
+        <item>https://script.google.com/d/1eX8GVTbRV2fmlEttp6Kc8n42XAHLqcEGrorFnweWXZNWOHIkpZtuO2i_/edit?usp=drive_web</item>
+        <item>https://script.google.com/macros/s/AKfycbz9WTp7U98pFcTZXYrQ6a_fIV9MY6_SnyMApDAZRw/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwkmSvBMU1PjGmoybtQ2vrsdi2zgq3MmmgVYdLN/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwYu62yEVx2z8q7YQoey8PukGUjb8hdSuEZ0sZF/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbyErDuMDpRNHKwnYBj2BfCfSAtJ55EbzNeGtU1eZw/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbyZfREsIUaHxlsPJ4VYom7CBYvjM4BcR_38kc2LXA/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzKtab-WBcitYuc0b_K0hzXgqFPNuLvjfvyFGQmvA/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbyrvM3DI8qurX4uzDUYMCNdb3qDSgdcQ2LIjeqI/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbypgJKMsQxpOigkstnWN-iK_ef5gnb_r_Y6cK9u/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzGiRYM795E52hcFszFK8ElQ8EEQKBOxkWWimLr/exec</item>
+        <item>https://script.google.com/macros/s/AKfycby6nyD7qF1PVP9B9hzxn-rbo_qeHEWTnH3HJkamfw/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxjc4AmdXvSFZBoxq1T7u8UAKo9G4c33BsRVTx4mg/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzWnVefgZcQk1NdBxHX6EOE_5xSAZ9bm6y19rAcxg/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxvJrzWFJlqBbFZe2lC4sV0LSj3lqvVmZPjQ1uhiQ/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbyHxhKh2UPYxY6yT4gOMPu4_jvj-jxmMrcEnfEg3g/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzo2WH1U3t6U_u_TNbeqQEozJQoFJ1Pj5ajch32/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbyqc3RBz0ROLJDHcjaoer5TorLn3SGa6pMSpX7t/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbz55TToCmH-6NZ81lXzLT9nic6IyWmJGt4dkeo21w/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxSNatUp0SLU87dFRdtXZKfCuXCGY7dl1mtJpowsA/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwSuXctfkPw9VsbpeUhrGc1QKn-i3ReHL0hFc-e/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbyyVyYzlu_9HDdSOAKSAZb3n71m9ffzuu3RKFAf/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwSk6Yizly-3Qdk8hB-9mwZ4Mm6D6ufVVHCbCG-ZA/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwMe4-_JpowwychIuDvKztGfsjzfCdkVLA2vDzgPA/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwBw-Pixm2OTfjysfbpotghetXp4z0vyKxwS6QG/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzDzCnZuremk3ldXTp93DxLycHgf2S3cI_nHNrv/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbyzez9OLYEOLwybspRA4LhdFJF75WHoIfB_aVbr/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbz02mWilQeefQbcsl0OBknLBQx_sA6cnF4_lHVopQ/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbyTcjC663O9KmLHbIaktP0amVEJCyvLS6vH_-E5/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbyDLJBNA2a_6v_9C5Dw0Tm-2xuucEaGGPfsgzYzeg/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbw-LYF6EVjr0Hm2EWzlRhC4p97GWNWj_6nn4OmgMg/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbxGn_Fn_sn5fXrAQUR3bQBc-WIZqrCliwMh9kZVtA/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzXUDG1MsGAPlEYKPwsYS7NNF0hTJKlx-UyqTgNPw/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzvhn4xT_zPuLDoDb5uMssLFFN4UcW6ZwBwC3h4/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbzDXxp-im_5UQK7ovUhVBjEiOr7vsi4tdLA6Iov/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbwD66HNzrc0zUkoHUBEDh748nFPH6-QeoeAYmlSaQ/exec</item>
+        <item>https://script.google.com/macros/s/AKfycbyfbzmDnPoFp0mnhTtXS7hIUqQIULAd-lcB1Zvx/exec</item>
+    </string-array>
+</resources>

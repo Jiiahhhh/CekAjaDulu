@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvNasibSparpartSealFrontFork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserratbold"
+                android:text="Kondisi Seal Front Fork?"
+                android:textColor="@color/colorPrimary"
+                android:textSize="23sp" />
+
+            <LinearLayout
+                android:id="@+id/rlbateraiAki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvNasibSparpartSealFrontFork"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSealFrontForkOKE"
+                    android:layout_width="95dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_red"
+                    android:fontFamily="@font/montserratbold"
+                    android:text="OK"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnSealFrontForkTIDAK"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_border_red"
+                    android:fontFamily="@font/montserratbold"
+                    android:text="NOT OK"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvHargaSealFrontFork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlbateraiAki"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserratregular"
+                android:text="Estimasi Biaya"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edtHargaSealFrontFork"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tvHargaSealFrontFork"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edit_text_red_border"
+                android:fontFamily="@font/montserratregular"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:paddingStart="15dp"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvKomentarSealFrontFork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtHargaSealFrontFork"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserratregular"
+                android:text="Komentar"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edtKomentarSealFrontFork"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/tvKomentarSealFrontFork"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edit_text_red_border"
+                android:fontFamily="@font/montserratregular"
+                android:gravity="left|top"
+                android:padding="10dp"
+                android:paddingStart="15dp"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvFotoSealFrontFork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtKomentarSealFrontFork"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserratregular"
+                android:text="Foto"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imgFotoSealFrontFork"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/tvFotoSealFrontFork"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edit_text_red_border"
+                android:padding="10dp"
+                android:src="@drawable/inputcamera"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnSealFrontForkSELESAI"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/imgFotoSealFrontFork"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_red"
+                android:fontFamily="@font/montserratbold"
+                android:text="Selesai"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

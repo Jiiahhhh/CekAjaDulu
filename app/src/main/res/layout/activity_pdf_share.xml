@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".PdfShare">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.barteksc.pdfviewer.PDFView
+                android:id="@+id/pdfView1"
+                android:layout_width="150dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tvJudul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/pdfView1"
+                android:fontFamily="@font/montserratregular"
+                android:text="Judul"
+                android:textColor="@color/black" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvJudul"
+                android:layout_toRightOf="@id/pdfView1">
+
+                <TextView
+                    android:id="@+id/tvDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tvJudul"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/pdfView1"
+                    android:fontFamily="@font/montserratregular"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Description"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnShare2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_red"
+        android:fontFamily="@font/montserratbold"
+        android:text="Bagikan PDF"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_below="@+id/btnShare2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnExplorer"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/button_red"
+            android:fontFamily="@font/montserratbold"
+            android:text="Buka PDF di explorer"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnBuatLagi"
+            android:layout_weight="1"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_red"
+            android:fontFamily="@font/montserratbold"
+            android:text="Buat Laporan  Lagi"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
